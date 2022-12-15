@@ -72,11 +72,11 @@ module top(r, thickness, width, depth, height) {
                 rounded_cube(r, 10, 10, height-thickness/2);
         }
 
-        translate([(thickness+10)/2, (thickness+10)/2, height-thickness/2-2.5])
-            cylinder(3, 3, 3, $fn=120);
+        translate([(thickness+10)/2, (thickness+10)/2, height-thickness/2-3])
+            cylinder(4, 3, 3, $fn=120);
 
-        translate([width-(thickness+10)/2, depth-(thickness+10)/2, height-thickness/2-2.5])
-            cylinder(3, 3, 3, $fn=120);
+        translate([width-(thickness+10)/2, depth-(thickness+10)/2, height-thickness/2-3])
+            cylinder(4, 3, 3, $fn=120);
 
         translate([(width-15)/2, 0, (height-1)/2])
             rotate([-90, 0, 0])
@@ -112,11 +112,11 @@ module bottom(r, thickness, width, depth, height) {
                 rounded_cube(r, 10, 10, height+thickness/2);
         }
 
-        translate([(thickness+10)/2, (thickness+10)/2, height+thickness/2-2.5])
-            cylinder(3, 3, 3);
+        translate([(thickness+10)/2, (thickness+10)/2, height+thickness/2-3])
+            cylinder(4, 3, 3);
 
-        translate([width-(thickness+10)/2, depth-(thickness+10)/2, height+thickness/2-2.5])
-            cylinder(3, 3, 3);
+        translate([width-(thickness+10)/2, depth-(thickness+10)/2, height+thickness/2-3])
+            cylinder(4, 3, 3);
     }
 }
 
